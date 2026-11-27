@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مساعد كتب التلوين على أمازون</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f4ee;--card:#fff;--tx:#1b1b1b;--mut:#666;--ac:#c8960a;--acx:#1b1b1b;--br:#e4dfd0;--ok:#2e8b57}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e0e;--card:#1a1a1a;--tx:#f2f2f2;--mut:#a0a0a0;--ac:#ffc400;--acx:#111;--br:#2c2c2c;--ok:#4cc38a}}
+:root[data-theme="dark"]{--bg:#0e0e0e;--card:#1a1a1a;--tx:#f2f2f2;--mut:#a0a0a0;--ac:#ffc400;--acx:#111;--br:#2c2c2c;--ok:#4cc38a}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7;padding-bottom:70px}
+header{padding:16px;text-align:center;background:var(--card);border-bottom:2px solid var(--ac)}
+header h1{margin:0;font-size:19px;color:var(--ac)}
+header p{margin:2px 0 0;font-size:12px;color:var(--mut)}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+nav button{flex:none;border:1px solid var(--br);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:20px;font:inherit;font-size:13px}
+nav button.on{background:var(--ac);color:var(--acx);border-color:var(--ac);font-weight:700}
+main{padding:0 12px;max-width:720px;margin:auto}
+.card{background:var(--card);border:1px solid var(--br);border-radius:14px;padding:14px;margin:10px 0}
+h2{font-size:17px;margin:4px 0 8px;color:var(--ac)}
+h3{font-size:15px;margin:8px 0 4px}
+.mut{color:var(--mut);font-size:13px}
+details{background:var(--card);border:1px solid var(--br);border-radius:14px;margin:10px 0;padding:0 14px}
+summary{padding:12px 0;font-weight:700;cursor:pointer;list-style:none;display:flex;gap:8px;align-items:center}
+summary::-webkit-details-marker{display:none}
+.num{background:var(--ac);color:var(--acx);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;flex:none}
+label.it{display:flex;gap:8px;align-items:flex-start;padding:5px 0;font-size:14px}
+input[type=checkbox]{width:20px;height:20px;accent-color:var(--ac);flex:none;margin-top:3px}
+.tag{display:inline-block;background:var(--bg);border:1px solid var(--br);border-radius:8px;padding:2px 8px;margin:2px;font-size:12px}
+.tip{border-right:3px solid var(--ac);padding:4px 10px;margin:8px 0;font-size:13px;background:var(--bg);border-radius:6px}
+.bar{height:10px;background:var(--br);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ac);width:0;transition:width .3s}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--br);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit;margin:3px 0 8px}
+.btn{border:0;background:var(--ac);color:var(--acx);padding:10px 16px;border-radius:10px;font:inherit;font-weight:700;margin:3px 0}
+.btn.s{background:var(--bg);color:var(--tx);border:1px solid var(--br)}
+.res{background:var(--bg);border-radius:10px;padding:10px;font-size:14px;white-space:pre-wrap}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+pre{white-space:pre-wrap;background:var(--bg);padding:10px;border-radius:10px;font:inherit;font-size:13px;margin:6px 0;border:1px dashed var(--br)}
+footer{text-align:center;font-size:12px;color:var(--mut);padding:16px}
+footer b{color:var(--ac)}
+.pg{display:none}.pg.on{display:block}
+</style>
+</head>
+<body>
+<header><h1>📚 مساعد كتب التلوين على أمازون KDP</h1><p>من الفكرة إلى أول مبيعات، خطوة بخطوة</p></header>
+<nav id="nav"></nav>
+<main>
+<section class="pg" id="p0"></section>
+<section class="pg" id="p1">
+<div class="card"><h2>🧮 حاسبة الأرباح</h2>
+<div class="grid"><div>سعر البيع ($)<input id="pr" type="number" value="7.99" step="0.5"></div><div>عدد الصفحات<input id="pc" type="number" value="100"></div>
+<div>عدد الكتب<input id="bk" type="number" value="10"></div><div>مبيعات شهرية لكل كتاب<input id="sl" type="number" value="5"></div></div>
+<button class="btn" onclick="calc()">احسب</button><div class="res" id="rs">اضغط احسب</div>
+<p class="mut">التقدير تقريبي: العمولة 60% من السعر، وتكلفة الطباعة تقريباً 1.00$ + 0.012$ لكل صفحة (حبر أسود، سوق أمريكا). تحقق من الأرقام الحالية في KDP قبل التسعير.</p></div>
+<div class="card"><h2>📐 حاسبة الغلاف والكعب</h2>
+<div class="grid"><div>العرض (إنش)<input id="tw" type="number" value="8.5" step="0.01"></div><div>الارتفاع (إنش)<input id="th" type="number" value="11" step="0.01"></div></div>
+عدد الصفحات<input id="tp" type="number" value="100">
+<button class="btn" onclick="cov()">احسب مقاس الغلاف</button><div class="res" id="cv">...</div>
+<p class="mut">يفترض ورقاً أبيض بحبر أسود (0.002252 إنش للصفحة) مع bleed بمقدار 0.125 إنش. استخدم دائماً قالب KDP الرسمي للتأكد.</p></div>
+</section>
+<section class="pg" id="p2">
+<div class="card"><h2>💡 مولّد الأفكار والعناوين</h2>
+<button class="btn" onclick="idea()">فكرة جديدة 🎲</button>
+<div class="res" id="id">اضغط لتوليد فكرة سلسلة كاملة</div>
+<h3>مولّد عنوان ووصف</h3>
+الموضوع (بالإنجليزية)<input id="tp1" placeholder="Cute Cats">
+الجمهور<select id="au"><option>Kids Ages 4-8</option><option>Adults</option><option>Seniors</option><option>Teens</option></select>
+<button class="btn" onclick="ttl()">أنشئ العنوان والوصف</button><pre id="tt">...</pre>
+<button class="btn s" onclick="cp('tt')">نسخ</button></div>
+</section>
+<section class="pg" id="p3"></section>
+<section class="pg" id="p4"></section>
+</main>
+<footer>تطوير: <b>Khader Abo Salha</b> · mankhader@gmail.com<br>هذه معلومات إرشادية، وليست ضماناً للأرباح. راجع سياسات KDP الحالية دائماً.</footer>
+<script>
+var P=[
+{t:"اختيار الفئة والبحث",d:"الأساس: فئة مطلوبة بمنافسة معقولة.",s:["افتح أمازون وابحث عن 'coloring book' ثم أضف كلمة فئة (مثل: cats, mandala, dinosaurs)","سجّل أفضل 10 كتب: ترتيبها BSR، السعر، عدد الصفحات، عدد التقييمات","ابحث عن فئة فيها كتب بـ BSR أقل من 100,000 وتقييمات قليلة (فرصة)","حدد سلسلة من 5 كتب بنفس الأسلوب بدل كتاب واحد","اكتب 7 كلمات مفتاحية من اقتراحات البحث في أمازون"],tl:["Amazon Search","Publisher Rocket","KDSPY","Google Trends","Helium 10 (مجاني محدود)"],tp:"ابحث عن مواضيع موسمية قبل الموسم بشهرين (هالووين، عيد الميلاد، رمضان، العودة للمدارس)."},
+{t:"فتح حساب KDP والضرائب",d:"تحتاج حساباً قبل أي رفع.",s:["أنشئ حساباً على kdp.amazon.com بنفس اسمك القانوني","أكمل بيانات الحساب والبنك لاستلام الأرباح","أكمل المقابلة الضريبية (W-8BEN للمقيمين خارج أمريكا) بدقة","فعّل الدفع (يصل عادة بعد حوالي 60 يوماً من نهاية شهر البيع)"],tl:["kdp.amazon.com"],tp:"راجع صفحة الضرائب في KDP جيداً؛ الخطأ فيها قد يعني اقتطاعاً أعلى."},
+{t:"إنشاء الصفحات الداخلية",d:"الجودة والتناسق أهم من الكمية.",s:["حدد المقاس: 8.5×11 إنش للبالغين أو 8.5×8.5 للصغار","أنشئ 40 إلى 60 رسمة على الأقل بخطوط سوداء سميكة وخلفية بيضاء","اطبع صفحة على وجه واحد وأضف صفحة فارغة خلفها لمنع نزول الحبر","استخدم دقة 300 DPI وخلفية بيضاء نقية ومنع الظلال الرمادية","راجع كل صورة: لا أخطاء تشريحية ولا خطوط مقطوعة ولا شخصيات محمية","أضف صفحة عنوان وصفحة 'ملكية هذا الكتاب' وصفحة حقوق"],tl:["Canva","Midjourney / ChatGPT / Leonardo (إن سمحت شروطها)","Procreate أو Krita (مجاني)","Photopea (مجاني)","Remove.bg"],tp:"إن استخدمت الذكاء الاصطناعي فعليك الإفصاح عنه في KDP عند النشر وفق سياستهم الحالية."},
+{t:"تصميم الغلاف",d:"الغلاف هو إعلانك الأول.",s:["اجعل الغلاف ملوناً ولافتاً ومقروءاً عند حجم مصغر","ضع العنوان بخط كبير واضح وفئة العمر","أضف 3 رسوم جذابة من الداخل كمعاينة","احسب مقاس الغلاف الكامل من تبويب الحاسبات (أو قالب KDP)","احفظه PDF أو PNG بدقة 300 DPI"],tl:["Canva","KDP Cover Creator","Photoshop / Photopea"],tp:"قارن غلافك بجانب 5 منافسين مصغرين؛ إن لم يتميز، عدّله."},
+{t:"تجميع PDF وفحصه",d:"ملف نظيف يمنع الرفض.",s:["اجمع الصفحات بترتيبها في PDF واحد بمقاس الكتاب بدقة","تأكد أن الهوامش الداخلية لا تقل عن 0.375 إنش","شغّل أداة المعاينة (Previewer) في KDP لكشف الأخطاء","اطلب نسخة تجريبية مطبوعة (Proof) لأول كتاب"],tl:["Canva (تصدير PDF)","Adobe Acrobat / PDF24","KDP Previewer"],tp:"يمكنني مساعدتك لاحقاً ببناء أداة تجمّع صورك في PDF بالمقاس الصحيح."},
+{t:"الرفع على KDP",d:"الإعدادات الصحيحة.",s:["Create ثم Paperback","العنوان: الكلمة الرئيسية أولاً مثل: Cute Cats Coloring Book for Kids Ages 4-8","الوصف: فوائد الكتاب، عدد الصور، المقاس، لمن هو","أدخل 7 كلمات مفتاحية وفئتين مناسبتين","اختر ISBN مجاني من KDP","Interior: Black & White with white paper، Bleed: No bleed للداخل","ارفع الداخلية والغلاف، راجع Previewer، ثم الأسعار"],tl:["KDP Dashboard"],tp:"تأكد من حقل الإفصاح عن المحتوى المُنشأ بالذكاء الاصطناعي إن وُجد."},
+{t:"التسعير الذكي",d:"سعر متوازن بين الربح والمنافسة.",s:["ابدأ بسعر قريب من متوسط المنافسين (غالباً 6.99$ إلى 9.99$)","تأكد أن الربح لكل نسخة 1.5$ أو أكثر","جرّب سعر إطلاق منخفضاً أول أسبوعين لجمع المبيعات والتقييمات","ارفعه تدريجياً عند الاستقرار"],tl:["تبويب حاسبة الأرباح"],tp:"السعر الأقل لا يعني مبيعات أكثر دائماً؛ اختبر قبل أن تقرر."},
+{t:"الإطلاق والتسويق",d:"الكتاب لا يبيع نفسه.",s:["اطلب من الأهل والأصدقاء المهتمين نسخاً حقيقية وتقييماً صادقاً (ولا تشترِ تقييمات)","أنشئ فيديوهات قصيرة (Reels/TikTok/Pinterest) تعرض تلوين الصفحات","اصنع صفحة على Pinterest وضع روابط الكتب","جرّب إعلانات أمازون Sponsored Products بميزانية صغيرة (3$ إلى 5$ يومياً)","استخدم Author Central لإضافة صفحة المؤلف","اصنع قائمة بريدية بصفحات تلوين مجانية مقابل الإيميل"],tl:["Amazon Ads","Pinterest","TikTok / Instagram","Mailchimp","Author Central"],tp:"التسويق المجاني عبر المحتوى المرئي هو الأفضل لكتب التلوين."},
+{t:"التحليل والتوسع",d:"كرر ما ينجح.",s:["راجع تقرير المبيعات أسبوعياً في KDP","احذف أو حدّث الكتب الضعيفة بعد 60 يوماً (عنوان، غلاف، كلمات مفتاحية)","أنتج جزءاً ثانياً وثالثاً من أنجح كتاب","نوّع: نسخ ألوان، نسخ كبيرة الخط، نسخ أنشطة، دفاتر ملاحظات","فكّر بلغات أخرى وأسواق أخرى (UK, DE, FR) والبيع الواسع على Etsy"],tl:["KDP Reports","Google Sheets"],tp:"القاعدة: 10 كتب جيدة في فئة واحدة أفضل من 30 كتاباً ضعيفاً متفرقاً."}
+];
+var TIPS=["اجعل الرسوم بسيطة وواضحة للأطفال، ومفصّلة للبالغين","كل كتاب جديد يقوّي الكتب القديمة (سلسلة بنفس المؤلف)","استخدم Look Inside: أول 10 صفحات يجب أن تكون الأجمل","تجنب العلامات والشخصيات المحمية (ديزني، بوكيمون...)","صفحات تلوين مجانية على موقعك أو Pinterest تجلب عملاء","موسمية: هالووين، كريسماس، رمضان، عيد الأم، العودة للمدارس","الأحجام الكبيرة (8.5×11) أكثر مبيعاً في العادة","كتب بدون تكرار: كل صفحة مختلفة ومميزة","اطلب من المشترين تقييماً بطريقة مهذبة بنص داخل الكتاب","اشتغل على 3 إلى 5 مواضيع فرعية داخل فئة واحدة","راقب الكلمات المفتاحية للمنافسين وعدّل كل شهر","نوّع بين Paperback وKindle قراءة وكتب أنشطة وألغاز"];
+var PROMPTS=["Black and white coloring page for kids, cute [animal] playing in a garden, thick clean outlines, no shading, no gray, white background, simple shapes","Detailed mandala coloring page for adults, symmetrical, intricate patterns inspired by [theme], crisp black line art, pure white background, no shading","Line art coloring page, [scene] with large simple shapes for toddlers, bold outlines, plenty of white space, no text, no color","Zentangle style coloring page of [subject], fine black lines, balanced composition, no filled black areas, white background"];
+var IDEAS=[["حيوانات لطيفة","Cute Animals"],["ماندالا","Mandala"],["ديناصورات","Dinosaurs"],["حياة البحر","Ocean Life"],["سيارات وشاحنات","Cars and Trucks"],["أزهار وحدائق","Flowers and Gardens"],["مدن وعمارة عربية","Arabic Architecture"],["رمضان والأعياد","Ramadan Coloring"],["فضاء ورواد","Space Adventure"],["قطط وكلاب","Cats and Dogs"],["أميرات وخيال","Fairy Tale"],["طعام وحلويات","Food and Sweets"]];
+var AUD=["Kids 4-8","Toddlers 2-4","Adults","Seniors Large Print","Teens"];
+var st={};try{st=JSON.parse(localStorage.getItem("kdp")||"{}")}catch(e){}
+function sv(){try{localStorage.setItem("kdp",JSON.stringify(st))}catch(e){}}
+var tabs=["الخطة","الحاسبات","الأفكار","النصائح","الأوامر"];
+var nav=document.getElementById("nav");
+tabs.forEach(function(n,i){var b=document.createElement("button");b.textContent=n;b.onclick=function(){show(i)};nav.appendChild(b)});
+function show(i){document.querySelectorAll(".pg").forEach(function(p,k){p.classList.toggle("on",k==i)});nav.querySelectorAll("button").forEach(function(b,k){b.classList.toggle("on",k==i)});window.scrollTo(0,0)}
+function esc(s){return s.replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function plan(){var tot=0,dn=0,h='<div class="card"><b>تقدمك</b> <span id="pt" class="mut"></span><div class="bar"><i id="pb"></i></div><p class="mut">اتبع المراحل بالترتيب وضع علامة على كل خطوة تنجزها. يُحفظ تقدمك على جهازك.</p></div>';
+P.forEach(function(p,i){h+='<details><summary><span class="num">'+(i+1)+'</span>'+p.t+'</summary><p class="mut">'+p.d+'</p>';
+p.s.forEach(function(s,j){var k=i+"_"+j;tot++;if(st[k])dn++;h+='<label class="it"><input type="checkbox" data-k="'+k+'" '+(st[k]?"checked":"")+'><span>'+s+'</span></label>'});
+h+='<h3>🛠 الأدوات</h3>'+p.tl.map(function(t){return'<span class="tag">'+t+'</span>'}).join("")+'<div class="tip">💡 '+p.tp+'</div></details>'});
+var el=document.getElementById("p0");el.innerHTML=h;
+el.querySelectorAll("input").forEach(function(c){c.onchange=function(){st[c.dataset.k]=c.checked;sv();prog()}});prog()}
+function prog(){var a=document.querySelectorAll("#p0 input"),d=0;a.forEach(function(c){if(c.checked)d++});document.getElementById("pt").textContent=d+" / "+a.length;document.getElementById("pb").style.width=(a.length?d/a.length*100:0)+"%"}
+function calc(){var pr=+pr_.value,pg=+pc.value,bk=+bkk.value,sl=+sll.value;var cost=(pg<=108?1.0:0.85)+0.012*pg;var roy=Math.max(0,pr*0.6-cost);var m=roy*sl*bk;
+rs.textContent="تكلفة الطباعة: "+cost.toFixed(2)+"$\nربح النسخة: "+roy.toFixed(2)+"$\nالربح الشهري: "+m.toFixed(2)+"$\nالربح السنوي: "+(m*12).toFixed(2)+"$"+(roy<1.2?"\n⚠ الربح منخفض، ارفع السعر أو قلل الصفحات.":"")}
+var pr_=document.getElementById("pr"),pc=document.getElementById("pc"),bkk=document.getElementById("bk"),sll=document.getElementById("sl"),rs=document.getElementById("rs");
+function cov(){var w=+tw.value,h=+th.value,p=+tp.value,sp=p*0.002252;var W=2*w+sp+0.25,H=h+0.25;cv.textContent="عرض الكعب: "+sp.toFixed(3)+" إنش\nمقاس الغلاف الكامل: "+W.toFixed(3)+" × "+H.toFixed(3)+" إنش\nبالبكسل عند 300 DPI: "+Math.round(W*300)+" × "+Math.round(H*300)+"\nملاحظة: الكعب فقط للكتب بأكثر من 79 صفحة تقريباً لوضع نص عليه."}
+var tw=document.getElementById("tw"),th=document.getElementById("th"),tp=document.getElementById("tp"),cv=document.getElementById("cv");
+function R(a){return a[Math.floor(Math.random()*a.length)]}
+function idea(){var i=R(IDEAS),a=R(AUD);document.getElementById("id").textContent="الفئة: "+i[0]+" ("+i[1]+")\nالجمهور: "+a+"\nالسلسلة: 5 كتب، كل كتاب 50 صورة\nالعنوان المقترح: "+i[1]+" Coloring Book for "+a+"\nأفكار فرعية: "+["نسخة كبيرة الخط","نسخة أنشطة وألغاز","نسخة موسمية","نسخة بسيطة جداً","نسخة مفصلة"].join("، ")}
+function ttl(){var t=tp1.value.trim()||"Cute Cats",a=au.value;document.getElementById("tt").textContent="Title: "+t+" Coloring Book for "+a+"\nSubtitle: 50 Unique Single-Sided Pages for Relaxation and Fun\n\nDescription:\nLooking for the perfect "+t.toLowerCase()+" coloring book? Inside you will find 50 original illustrations with bold, clean lines.\n\n• 50 unique designs\n• Single-sided pages to prevent bleed-through\n• Large 8.5 x 11 inch size\n• Perfect gift for birthdays and holidays\n\nScroll up and click Buy Now to start coloring today!\n\nKeywords: "+t.toLowerCase()+" coloring book, "+a.toLowerCase()+" coloring, gift coloring book, relaxing coloring pages, single sided coloring, activity book, stress relief coloring"}
+var tp1=document.getElementById("tp1"),au=document.getElementById("au");
+function cp(id){var t=document.getElementById(id).textContent;if(window.AndroidBridge){AndroidBridge.copy(t);return}try{navigator.clipboard.writeText(t)}catch(e){var r=document.createRange();r.selectNode(document.getElementById(id));getSelection().removeAllRanges();getSelection().addRange(r)}}
+document.getElementById("p3").innerHTML='<div class="card"><h2>🚀 نصائح لزيادة المبيعات</h2>'+TIPS.map(function(t){return'<div class="tip">'+t+'</div>'}).join("")+'<h3>خطة 90 يوماً</h3><div class="res">الشهر 1: بحث + 5 كتب في فئة واحدة\nالشهر 2: نشر وتسويق + تعديل الأغلفة والكلمات\nالشهر 3: توسعة الناجح + إعلانات صغيرة + 5 كتب أخرى\nالهدف الواقعي: 10 كتب خلال 90 يوماً ثم القياس</div></div>';
+document.getElementById("p4").innerHTML='<div class="card"><h2>🤖 أوامر جاهزة للذكاء الاصطناعي</h2><p class="mut">استبدل الكلمة بين الأقواس. تحقق من شروط الأداة المستخدمة وسياسة KDP.</p>'+PROMPTS.map(function(p,i){return'<pre id="pm'+i+'">'+esc(p)+'</pre><button class="btn s" onclick="cp(\'pm'+i+'\')">نسخ</button>'}).join("")+'</div>';
+plan();show(0);
+</script>
+</body>
+</html>
